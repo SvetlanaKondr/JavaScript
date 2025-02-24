@@ -33,14 +33,63 @@ else if ((age > 50 || kmi >= 30 || smoke) && !(age > 50 && kmi >= 30 && smoke)) 
 else if (age > 50 && kmi >= 30 && smoke) {console.log("Labai didelė rizika");}
 else {console.log("Neapibrėžta rizika");}
 
+let masyvas = [1,2,3,4];
+let masyvas2 = [1,2,3];
+console.log(masyvas===masyvas2); //4
+console.log(masyvas.length); //4
+console.log(masyvas[0]);
+console.log(masyvas[1]);
+console.log(masyvas[4]); //undefined
+masyvas.push("Svetlana"); //[1,2,3,4, "Svetlana"];
+console.log(masyvas.length); //5
+
+
 let zmogus = {
-    vardas:'Svetlana',
+    vardas:'SvetlanaS',
     pavarde: 'Kond',
-    amz:40,
+    amzius:40,
     'pilnas vardas': 'Svetlana Kond'
 };
 console.log(zmogus);
 console.log(zmogus.vardas);
 console.log(zmogus['pavarde']);
 console.log(zmogus['pilnas vardas']);
+
+zmogus.asPilnametis=true; //pridėti ypatybę prie objekto
+
+if(false){
+    console.log('Žmogus yra pilnametis');
+}else {
+    console.log('Žmogus yra nepilnametis');
+}
+
+
+if(zmogus.amzius === 18 ){
+    console.log('Žmogus yra pilnametis');
+}else if(zmogus.amzius < 18 ){
+    console.log('Džiaukis kol gali');
+}else{
+    console.log('Tu jau susugęs')
+}
+
+if(1>2||2<3){console.log('tiesa')}
+else{console.log('Netiesa')};
+
+if(1>2 && 2<3){console.log('Tiesa')}
+else{console.log('Netiesa')};
+
+if(!(2===2)){console.log('Tiesa')}
+else{console.log('Netiesa')};
+
+if(!(zmogus.vardas === 'Svetlana')){console.log('Tiesa')}
+else{console.log('Netiesa')};
+
+let cart = [
+    {preke: 'sepetukas'}
+]
+
+//patikriname, ar krepselis nera tuscias
+if(!cart.length) {console.log('Tavo pirkiniu krepselis tuscias')}
+else {console.log(cart)}
+
 // });
