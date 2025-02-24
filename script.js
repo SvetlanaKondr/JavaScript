@@ -33,4 +33,14 @@ else if ((age > 50 || kmi >= 30 || smoke) && !(age > 50 && kmi >= 30 && smoke)) 
 else if (age > 50 && kmi >= 30 && smoke) {console.log("Labai didelė rizika");}
 else {console.log("Neapibrėžta rizika");}
 
+let zmogus = {
+    vardas:'Svetlana',
+    pavarde: 'Kond',
+    amz:40,
+    'pilnas vardas': 'Svetlana Kond'
+};
+console.log(zmogus);
+console.log(zmogus.vardas);
+console.log(zmogus['pavarde']);
+console.log(zmogus['pilnas vardas']);
 // });
