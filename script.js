@@ -92,4 +92,7 @@ let cart = [
 if(!cart.length) {console.log('Tavo pirkiniu krepselis tuscias')}
 else {console.log(cart)}
 
+
+
+
 // });
