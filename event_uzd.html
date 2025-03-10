@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #inpCont {
+            padding-top: 20px;
+            /* Tarpas tarp mygtukų ir pirmo input */
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="forma">
+        <!--1 -->
+        <button id="btn1">button1</button>
+        <button id="btn2">button2</button>
+
+
+        <!-- 2 -->
+        <p>
+            <label>
+                Ivesti:
+                <input id="ivestLauk" name="ivestis" type="text">
+            </label>
+        </p>
+        <p id="isvest"></p>
+
+
+        <!-- 3 -->
+        <div id="inpCont" class="error">
+            <input id="inp1" type="text" placeholder="Įveskite tekstą" required>
+        </div>
+        <div>
+            <input id="inp2" type="text" placeholder="Įveskite el.paštą" required>
+        </div>
+        <div>
+            <input id="inp3" type="text" placeholder="Įveskite amžių" required>
+        </div>
+        <button id="pateikti">Pateikti</button>
+
+
+    </form>
+
+    <script src="event_uzd.js"></script>
+</body>
+
+</html>

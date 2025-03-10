@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error {
+            border: 1px solid red;
+        }
+ 
+        form {
+            display: none;
+        }
+ 
+        .show {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="mano-mygtukas">Mano mygtukas plius</button>
+    <button id="mano-mygtukas-minus">Mano mygtukas minus</button>
+
+       <p id="mano-skaicius"></p>
+
+<button id="burger-btn">burger button</button>
+
+       <form id="mano-forma">
+
+            <div id="vardo-div">
+                <label>
+                    Vardas:
+                    <input required name="vardas" type="text">
+                </label>
+            </div>
+
+            <div id="pavarde-div">
+                <label>
+                    Pavarde:
+                    <input name="pavarde" type="text">
+                </label>
+            </div>
+
+<button type="submit">Pateikti</button>
+
+       </form>
+
+    <script src="event.js"></script>
+</body>
+</html>

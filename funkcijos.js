@@ -71,11 +71,25 @@ else {console.log('nulis')
 })();
 
 //kintamoji nepasiekiama uz sio bloko ribu. izoliuojam nuo kitos bloko galies - globalaus objekto
-(() => {
-    const zmogus = {
-        vardas:'denisas'
-    };
-    console.log(zmogus.vardas)
-});
+// (() => {
+//     const zmogus = {
+//         vardas:'denisas'
+//     };
+//     console.log(zmogus.vardas)
+// });
 
-console.log(zmogus.vardas)
+// console.log(zmogus.vardas)
+
+
+// const sudetiDuSkaicius4 = function (skaicius1=0, skaicius2=0){
+//     return skaicius1 + skaicius2;
+// }
+// const sudetiDuSkaicius4 = function (skaicius1=0, skaicius2=0){
+//     return skaicius1 - skaicius2;
+// }
+
+function operatoriausFunkcija(operacija, skaicius1, skaicius2){
+    return operacija(skaicius1+skaicius2)
+}
+
+console.log(operatoriausFunkcija(sudetiDuSkaicius, 3, 5))
